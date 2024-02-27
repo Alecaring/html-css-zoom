@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: black;
+    --white: white;
+    --grey: rgb(55, 50, 50);
+    --red: red;
+}
+a{
+    text-decoration: none;
+}
+
+
+header{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-items-navbar{
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+}
+.flex-items-navbar i{
+    font-size: 25px;
+}
+.navbar-left{
+    width: 30%;
+    height: 100%;
+
+}
+ul{
+    display: flex;
+}
+ul span{
+    font-size: .8rem;
+}
+li{
+    display: block;
+    text-align: center;
+    padding: 0 5px;
+}
+li a{
+    color: var(--white);
+}
+.fa-share-from-square{
+    color: green;
+}
+button{
+    padding: 5px;
+    height: 100%;
+    color: var(--red);
+    background-color: gray;
+    font-weight: bold;
+}
+.navbar.center{
+    width: 30%;
+    height: 100%;
+}
+.navbar-right{
+    width: 30%;
+    height: 100%;
+}
+
+
+
+
+.top-screen-right{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--white);
+}
+.top-screen-right span{
+    background-color: rgba(255, 255, 255, 0.325);
+    padding: 5px;
+    border-radius: 10px;
+}
+.top-screen-right>span i{
+    margin: 10px;
+}
+
+
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+}
+.user-container{
+    width: 90%;
+    height: calc(100% - 80px - 100px);
+    margin-bottom: 40px;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: space-between;
+}
+.user{
+    position: relative;
+    width: calc(100% / 7 - 4px);
+    height: auto;
+    margin-bottom: 10px;
+    background-image: url(../img/zoom\ img.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.user-bottom-icon{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.707);
+    color: var(--white);
+    font-size: .8rem;
+}
